@@ -1,4 +1,9 @@
-var path = require("path");
+// Require all models
+var db = require("../models");
+
+// Our scraping tools
+var axios = require("axios");
+var cheerio = require("cheerio");
 
 // Routes
 module.exports = function(app) {
